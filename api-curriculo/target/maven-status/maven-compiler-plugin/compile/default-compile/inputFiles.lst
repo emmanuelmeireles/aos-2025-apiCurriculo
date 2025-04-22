@@ -1,0 +1,5 @@
+/workspaces/aos-2025-apiCurriculo/api-curriculo/src/main/java/com/example/apicurriculo/model/Curriculum.java
+/workspaces/aos-2025-apiCurriculo/api-curriculo/src/main/java/com/example/apicurriculo/ApiCurriculoApplication.java
+/workspaces/aos-2025-apiCurriculo/api-curriculo/src/main/java/com/example/apicurriculo/service/CurriculumService.java
+/workspaces/aos-2025-apiCurriculo/api-curriculo/src/main/java/com/example/apicurriculo/repository/CurriculumRepository.java
+/workspaces/aos-2025-apiCurriculo/api-curriculo/src/main/java/com/example/apicurriculo/controller/CurriculumController.java
