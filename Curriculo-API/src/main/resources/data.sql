@@ -1,0 +1,4 @@
+-- INSERT INTO curriculo (id, nome, email, telefone) VALUES (1, 'João Silva', 'joao.silva@example.com', '123456789');
+-- INSERT INTO curriculo (id, nome, email, telefone) VALUES (2, 'Maria Oliveira', 'maria.oliveira@example.com', '987654321');
+-- INSERT INTO experiencia (id, cargo, empresa, dataInicio, dataFim, curriculo_id) VALUES (1, 'Desenvolvedor', 'Tech Solutions', '2020-01-01', '2021-01-01', 1);
+-- INSERT INTO experiencia (id, cargo, empresa, dataInicio, dataFim, curriculo_id) VALUES (2, 'Analista de Sistemas', 'Innovatech', '2019-01-01', '2020-01-01', 2);

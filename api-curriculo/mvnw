@@ -1,2 +1,0 @@
-#!/bin/sh
-./mvnw -N io.takari:maven:1.0.0:wrapper -Dmaven=3.6.3 -DdistributionUrl=https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.6.3/apache-maven-3.6.3-bin.zip
