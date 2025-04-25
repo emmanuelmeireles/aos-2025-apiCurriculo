@@ -7,8 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = "controller")
-public class Application {
-}
+
 
 public class CurriculoApiApplication {
 
