@@ -17,9 +17,6 @@ public class Curriculo {
     private String email;
     private String telefone;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name = "curriculo_id")
-    private List<Experiencia> experiencias;
 
     // Getters and Setters
 
@@ -55,11 +52,5 @@ public class Curriculo {
         this.telefone = telefone;
     }
 
-    public List<Experiencia> getExperiencias() {
-        return experiencias;
-    }
 
-    public void setExperiencias(List<Experiencia> experiencias) {
-        this.experiencias = experiencias;
-    }
 }

@@ -11,26 +11,28 @@ import java.util.Optional;
 @Service
 public class CurriculoService {
 
-    private final CurriculoRepository curriculoRepository;
+    @Autowired
+    private CurriculoRepository repository;
+
 
     @Autowired
     public CurriculoService(CurriculoRepository curriculoRepository) {
-        this.curriculoRepository = curriculoRepository;
+        this.repository = curriculoRepository;
     }
 
     public Curriculo saveCurriculo(Curriculo curriculo) {
-        return curriculoRepository.save(curriculo);
+        return repository.save(curriculo);
     }
 
     public Optional<Curriculo> findCurriculoById(Long id) {
-        return curriculoRepository.findById(id);
+        return repository.findById(id);
     }
 
     public List<Curriculo> findAllCurriculos() {
-        return curriculoRepository.findAll();
+        return repository.findAll();
     }
 
     public void deleteCurriculo(Long id) {
-        curriculoRepository.deleteById(id);
+        repository.deleteById(id);
     }
 }

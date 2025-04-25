@@ -15,22 +15,21 @@ import java.util.Optional;
 public class CurriculoController {
 
     @Autowired
-
     CurriculoService curriculoService;
 
-    @PostMapping
+    @PostMapping("/create")
     public ResponseEntity<Curriculo> createCurriculo(@RequestBody Curriculo curriculo) {
         Curriculo savedCurriculo = curriculoService.saveCurriculo(curriculo);
         return ResponseEntity.ok(savedCurriculo);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/getCurriculo/{id}")
     public ResponseEntity<Curriculo> getCurriculo(@PathVariable Long id) {
         Optional<Curriculo> curriculo = curriculoService.findCurriculoById(id);
         return curriculo.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    @GetMapping
+    @GetMapping("/getTotal")
     public ResponseEntity<List<Curriculo>> getAllCurriculos() {
         List<Curriculo> curriculos = curriculoService.findAllCurriculos();
         return ResponseEntity.ok(curriculos);
