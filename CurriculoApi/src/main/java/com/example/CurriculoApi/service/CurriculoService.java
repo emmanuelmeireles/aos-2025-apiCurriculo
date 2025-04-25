@@ -1,9 +1,9 @@
-package service;
+package com.example.CurriculoApi.service;
 
-import model.Curriculo;
+import com.example.CurriculoApi.model.Curriculo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.CurriculoRepository;
+import com.example.CurriculoApi.repository.CurriculoRepository;
 
 import java.util.List;
 import java.util.Optional;

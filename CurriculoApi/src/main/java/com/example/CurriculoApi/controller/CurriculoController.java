@@ -1,10 +1,10 @@
-package controller;
+package com.example.CurriculoApi.controller;
 
-import model.Curriculo;
+import com.example.CurriculoApi.model.Curriculo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import service.CurriculoService;
+import com.example.CurriculoApi.service.CurriculoService;
 
 import java.util.List;
 import java.util.Optional;
@@ -33,5 +33,9 @@ public class CurriculoController {
     public ResponseEntity<List<Curriculo>> getAllCurriculos() {
         List<Curriculo> curriculos = curriculoService.findAllCurriculos();
         return ResponseEntity.ok(curriculos);
+    }
+    @GetMapping("/teste")
+    public ResponseEntity<String> testarApi() {
+        return ResponseEntity.ok("API funcionando!");
     }
 }

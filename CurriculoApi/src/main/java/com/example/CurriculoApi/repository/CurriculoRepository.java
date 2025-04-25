@@ -1,6 +1,6 @@
-package repository;
+package com.example.CurriculoApi.repository;
 
-import model.Curriculo;
+import com.example.CurriculoApi.model.Curriculo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

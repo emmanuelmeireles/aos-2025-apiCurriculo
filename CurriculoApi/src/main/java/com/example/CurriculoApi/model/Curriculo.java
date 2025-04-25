@@ -1,4 +1,4 @@
-package model;
+package com.example.CurriculoApi.model;
 
 
 import jakarta.persistence.*;
