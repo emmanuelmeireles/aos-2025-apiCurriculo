@@ -11,7 +11,7 @@ import java.util.Optional;
 
 
 @RestController
-@RequestMapping("/api/curriculos")
+    @RequestMapping("/api/curriculos")
 public class CurriculoController {
 
     @Autowired
